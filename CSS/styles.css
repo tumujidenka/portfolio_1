@@ -56,7 +56,7 @@ a{
 .p1_wrapper{
     height:800px;
     width:100%;
-    background-image: url("../images/house.jpg");
+    background-image: url("https://github.com/tumujidenka/portfolio_1/blob/main/images/house.jpg?raw=true");
     background-size: cover;
     display:flex;
     justify-content: flex-end;
