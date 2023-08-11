@@ -9,6 +9,12 @@ body{
     color: #333;
     margin:0 auto;
 }
+@media only screen and (max-width: 640px) {
+    .text_box p{
+        font-size:10px;
+    }
+
+}
 
 /* 
 header
@@ -36,6 +42,29 @@ header
     margin-left:auto;
 }
 
+@media only screen and (max-width: 640px) {
+    .header-left{
+        font-size:20px;
+        margin-top:30px;
+        margin-left:5px;
+    }
+
+    header-button>a {
+        font-size:10px;
+    }
+
+    .header_btn a{
+        display:block;
+        padding-bottom:20px;
+    }
+
+    .header_btn{
+        display:flex;
+        justify-items: center;
+    }
+
+}
+
 header-button{
     background-color:rgb(64, 153, 9);
     color:white;
@@ -56,7 +85,7 @@ a{
 .p1_wrapper{
     height:800px;
     width:100%;
-    background-image: url("https://github.com/tumujidenka/portfolio_1/blob/main/images/house.jpg?raw=true");
+    background-image: url("../images/house.jpg");
     background-size: cover;
     display:flex;
     justify-content: flex-end;
@@ -357,7 +386,8 @@ p2
     
 
     .p3_text_box_user{
-        width:150px;
+        width:120px;
+        top:0px;
     }
 
     .p3_text_box_user::before{
@@ -369,7 +399,10 @@ p2
         clip-path: polygon(0 50%, 100% 0, 100% 100%);
         content: '';
     }
-
+    .p3_img_user{
+        width:200px;
+        height:150px;
+    }
     .p3_buyer{
         margin-top:50px;
         position:static;
@@ -379,18 +412,23 @@ p2
 
     .p3_img_buyer{
         position:static;
+        width:200px;
+        height:150px;
+        margin-right:50px;
     }
 
     .p3_text_box_buyer{
         width:150px;
         margin-left:100px;
+        top:-20px;
+        padding:0;
     }
     .p3_text_box_buyer::after{
         position:absolute;
         right: -60px;
         top:40px;
-        width: 50px;
-        height: 30px;
+        width: 70px;
+        height: -20px;
         border-top:20px solid transparent;
         border-left:50px solid #e0efff;
         border-bottom:20px solid transparent;
@@ -485,7 +523,6 @@ p5
 
 .buyer_discription{
     text-align:center;
-
 }
 .p5_btn{
     display:block;
@@ -498,6 +535,59 @@ p5
     padding:5px;
     border-radius:4px;
 }
+
+
+@media only screen and (max-width: 640px) {
+    .p5_text_box{
+        border: 1px solid transparent;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 300px;
+        margin:2px auto;
+        padding: .4em 0.6em;
+        border-radius: 5px;
+        background-color: #e0efff;
+        color: #333333;   
+    }
+
+    .text_box_arrow::before{
+        position:absolute;
+        left: -20px;
+        top:15px;
+        width: 30px;
+        height: 10px;
+        border-top:10px solid transparent;
+        border-right:30px solid #e0efff;
+        border-bottom:10px solid transparent;
+        content:"";
+    }
+
+    .buyer_img{
+        width:100px;
+        height:150px;
+        margin-left:10%;
+    }
+
+    .buyer_discription{
+        text-align:center;
+        font-size:10px;
+    }
+
+    .p5_btn{
+        display:block;
+        text-align:center;
+        background-color:rgb(64, 153, 9);
+        color:white;
+        width:100%;
+        font-size: 5px;
+        margin:0 auto;
+        padding:3px;
+        border-radius:4px;
+    }
+}
+
 
 /* p6 */
 
@@ -538,6 +628,24 @@ p5
     margin-left:20px;
 }
 /* .p7_text{} */
+
+@media only screen and (max-width: 640px) {
+        
+    .p7_buyer{
+        display:flex;
+        justify-content: center;
+        flex-direction: row;
+        width:50%;
+        margin:0 auto;
+    }
+    .p7_img_buyer{
+        width:100px;
+        height:150px;
+    }
+    .p7_text_box_buyer{
+        margin-left:20px;
+    }
+}
 
 
 /* p8 */
@@ -588,6 +696,12 @@ p5
     justify-content: center;
 }
 
+@media only screen and (max-width: 640px) {
+    .p8_headline{
+        font-size:15px;
+    }
+}
+
 /* p9 */
 .p9_wrapper{
     margin-top:30px;
@@ -607,6 +721,12 @@ p5
 .p10_text_box{}
 .p10_textbox_headline{}
 .p10_textbox_text{} */
+
+@media only screen and (max-width: 640px) {
+    .p10_headline{
+        font-size: 15px;
+    }
+}
 
 /* p11 */
 
@@ -644,4 +764,18 @@ td {
 }
 .p11_googlemap{
     margin:20px 10px 10px 20px;
+}
+
+@media only screen and (max-width: 640px) {
+    .p11_company{
+        width:70%;
+        margin:0 auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+    .company_table{
+        margin:0 auto;
+    }
 }
