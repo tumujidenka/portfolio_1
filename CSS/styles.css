@@ -407,19 +407,20 @@ p2
         margin-top:50px;
         position:static;
         display:flex;
-        justify-content: flex-end;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
     }
 
     .p3_img_buyer{
         position:static;
         width:200px;
         height:150px;
-        margin-right:50px;
+        margin-right:0px;
     }
 
     .p3_text_box_buyer{
-        width:150px;
-        margin-left:100px;
+        width:100px;
+        margin-left:0px;
         top:-20px;
         padding:0;
     }
