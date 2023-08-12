@@ -388,13 +388,15 @@ p2
     .p3_text_box_user{
         width:120px;
         top:0px;
+        left:20px;
+        border: 1px solid transparent;
     }
 
     .p3_text_box_user::before{
         position:absolute;
-        left: -60px;
-        width: 50px;
-        height: 30px;
+        left: -30px;
+        width: 30px;
+        height: 20px;
         background-color: #e0efff;
         clip-path: polygon(0 50%, 100% 0, 100% 100%);
         content: '';
@@ -413,16 +415,17 @@ p2
 
     .p3_img_buyer{
         position:static;
-        width:200px;
-        height:150px;
-        margin-right:0px;
+        width:180px;
+        height:130px;
+        margin-right:10px;
     }
 
     .p3_text_box_buyer{
-        width:100px;
+        width:120px;
         margin-left:0px;
         top:-20px;
         padding:0;
+        border: 3px solid transparent;
     }
     .p3_text_box_buyer::after{
         position:absolute;
@@ -587,6 +590,10 @@ p5
         padding:3px;
         border-radius:4px;
     }
+
+    .buyer_contact{
+        width:70%;
+    }
 }
 
 
@@ -636,7 +643,7 @@ p5
         display:flex;
         justify-content: center;
         flex-direction: row;
-        width:50%;
+        width:70%;
         margin:0 auto;
     }
     .p7_img_buyer{
@@ -644,8 +651,12 @@ p5
         height:150px;
     }
     .p7_text_box_buyer{
-        margin-left:20px;
+        width:200px;
     }
+    .p7_text{
+        display:block;
+        width:100%;
+    } 
 }
 
 
@@ -727,6 +738,10 @@ p5
     .p10_headline{
         font-size: 15px;
     }
+    .p10_video{
+        width:200px;
+        height:150px;
+    }
 }
 
 /* p11 */
@@ -752,6 +767,8 @@ p5
 .p11_map{
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    justify-items: center;
 }
 
 td {
@@ -761,10 +778,14 @@ td {
   }
 
 .p11_video{
-    margin:20px 10px;
+    width:300px;
+    height:200px;
+    margin:20px auto;
 }
 .p11_googlemap{
-    margin:20px 10px 10px 20px;
+    width:300px;
+    height:200px;
+    margin:20px auto;
 }
 
 @media only screen and (max-width: 640px) {
@@ -779,4 +800,13 @@ td {
     .company_table{
         margin:0 auto;
     }
-}
+    .p11_video{
+        width:200px;
+        height:150px;
+        margin:20px auto;
+    }
+    .p11_googlemap{
+        width:200px;
+        height:150px;
+        margin:20px auto;
+    }}
